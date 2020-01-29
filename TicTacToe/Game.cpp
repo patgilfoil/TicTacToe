@@ -16,10 +16,10 @@ Game::~Game()
 void Game::draw() {
 	for (int i = 0; i < mapHeight; i++) {
 		for (int e = 0; e < mapWidth; e++) {
-			std::cout << grid[i][e] << "|";
+			std::cout << grid[i][e] << GREEN << "|" << RESET_COLOR;
 		}
 		std::cout << " " << std::endl;
-		std::cout << "-----" << std::endl;
+		std::cout << GREEN << "-----" << RESET_COLOR << std::endl;
 	}
 }
 
@@ -116,5 +116,5 @@ void Game::getInput() {
 
 bool Game::checkForWin() {
 	//player 1
-	
+	return false;
 }
