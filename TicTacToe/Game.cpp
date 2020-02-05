@@ -126,6 +126,7 @@ void Game::getInput() {
 }
 
 bool Game::checkForWin() {
+	draw();
 	//player 1
 	if (grid[0][0] == 'X' && grid[0][1] == 'X' && grid[0][2] == 'X') {
 		std::cout << "Player 1 wins." << std::endl;
