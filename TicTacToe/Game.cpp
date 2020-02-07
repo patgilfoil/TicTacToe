@@ -14,6 +14,7 @@ Game::~Game()
 }
 
 void Game::draw() {
+	//draw game board
 	for (int i = 0; i < mapHeight; i++) {
 		for (int e = 0; e < mapWidth; e++) {
 			std::cout << grid[i][e] << GREEN << "|" << RESET_COLOR;
@@ -25,6 +26,7 @@ void Game::draw() {
 
 void Game::getInput() {
 	char input = '0';
+	//while game is not over
 	while (!gameOver) {
 		//do a turn, then check to see if anyone won
 		while (player1Turn) {
@@ -129,7 +131,7 @@ void Game::getInput() {
 
 bool Game::checkForWin() {
 	
-	//player 1
+	//player 1 win conds
 	if (grid[0][0] == 'X' && grid[0][1] == 'X' && grid[0][2] == 'X') {
 		std::cout << "Player 1 wins." << std::endl;
 		return true;
@@ -162,7 +164,7 @@ bool Game::checkForWin() {
 		std::cout << "Player 1 wins." << std::endl;
 		return true;
 	}
-	//player 2
+	//player 2 win conds
 	if (grid[0][0] == 'O' && grid[0][1] == 'O' && grid[0][2] == 'O') {
 		std::cout << "Player 2 wins." << std::endl;
 		return true;
@@ -195,8 +197,8 @@ bool Game::checkForWin() {
 		std::cout << "Player 2 wins." << std::endl;
 		return true;
 	}
+	//nobody has won yet, return false and keep going
 	else {
 		return false;
 	}
-	
 }
