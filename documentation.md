@@ -12,7 +12,7 @@
 
     - **Problem Statement:** Recreate the game of Tic-Tac-Toe in C++.
 
-    - **Problem Specifications:** The program must use 
+    - **Problem Specifications:** The program must use a 2D array, be 2 player, and use the console for output.
 
 2. Input Information
 
