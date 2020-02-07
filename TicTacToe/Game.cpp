@@ -66,6 +66,7 @@ void Game::getInput() {
 			}
 
 			if (gameOver = checkForWin()) {
+				draw();
 				player1Turn = false;
 				player2Turn = false;
 			}
@@ -114,6 +115,7 @@ void Game::getInput() {
 			}
 
 			if (gameOver = checkForWin()) {
+				draw();
 				player1Turn = false;
 				player2Turn = false;
 			}
@@ -126,7 +128,7 @@ void Game::getInput() {
 }
 
 bool Game::checkForWin() {
-	draw();
+	
 	//player 1
 	if (grid[0][0] == 'X' && grid[0][1] == 'X' && grid[0][2] == 'X') {
 		std::cout << "Player 1 wins." << std::endl;
@@ -162,35 +164,35 @@ bool Game::checkForWin() {
 	}
 	//player 2
 	if (grid[0][0] == 'O' && grid[0][1] == 'O' && grid[0][2] == 'O') {
-		std::cout << "Player 2 wins.";
+		std::cout << "Player 2 wins." << std::endl;
 		return true;
 	}
 	if (grid[1][0] == 'O' && grid[1][1] == 'O' && grid[1][2] == 'O') {
-		std::cout << "Player 2 wins.";
+		std::cout << "Player 2 wins." << std::endl;
 		return true;
 	}
 	if (grid[2][0] == 'O' && grid[2][1] == 'O' && grid[2][2] == 'O') {
-		std::cout << "Player 2 wins.";
+		std::cout << "Player 2 wins." << std::endl;
 		return true;
 	}
 	if (grid[0][0] == 'O' && grid[1][0] == 'O' && grid[2][0] == 'O') {
-		std::cout << "Player 2 wins.";
+		std::cout << "Player 2 wins." << std::endl;
 		return true;
 	}
 	if (grid[0][1] == 'O' && grid[1][1] == 'O' && grid[2][1] == 'O') {
-		std::cout << "Player 2 wins.";
+		std::cout << "Player 2 wins." << std::endl;
 		return true;
 	}
 	if (grid[0][2] == 'O' && grid[1][2] == 'O' && grid[2][2] == 'O') {
-		std::cout << "Player 2 wins.";
+		std::cout << "Player 2 wins." << std::endl;
 		return true;
 	}
 	if (grid[0][0] == 'O' && grid[1][1] == 'O' && grid[2][2] == 'O') {
-		std::cout << "Player 2 wins.";
+		std::cout << "Player 2 wins." << std::endl;
 		return true;
 	}
 	if (grid[0][2] == 'O' && grid[1][1] == 'O' && grid[2][0] == 'O') {
-		std::cout << "Player 2 wins.";
+		std::cout << "Player 2 wins." << std::endl;
 		return true;
 	}
 	else {
