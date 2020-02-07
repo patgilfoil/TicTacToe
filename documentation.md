@@ -2,17 +2,18 @@
 :-
 | s198018 |
 | Intro to C++ |
-| Tic-Tac-Toe |
+| Player Database |
 
 ## I. Requirements
 
 1. Description of the problem
 
-    - **Name:** Tic-Tac-Toe
+    - **Name:** Player Database
 
-    - **Problem Statement:** Recreate the game of Tic-Tac-Toe in C++.
+    - **Problem Statement:** Create a program that will create, modify and save player profiles to a random-
+access binary file.
 
-    - **Problem Specifications:** The program must use a 2D array, be 2 player, and use the console for output.
+    - **Problem Specifications:** The program must store a name and high score for a player profile to a binary file and be able to read from it
 
 2. Input Information
 
@@ -20,9 +21,8 @@
 
 3. Output Information
 
-    - Every turn will show the board and the spaces where a mark can be placed.
-    - The console will output for each player turn on where to set a mark
-    - When someone wins, it will declare that user as the winner and show the final resulting board.
+    - The menu of options is shown on startup
+    - Entering a profile
 
 4. User Interface Information
 
@@ -32,52 +32,4 @@
 
 1. System Arcitecture
 
-    Type: Game
-
-    - Name: grid
-        - Description: character array of the tic-tac-toe "board"
-        - Type: char [3][3]
-
-    - Name: gameOver
-        - Description: variable to control the game loop
-        - Type: bool
-
-    - Name: mapWidth
-        - Description: fixed integer of the width of the game board used in printing the game board
-        - Type: int
-
-    - Name: mapHeight
-        - Description: fixed integer of the height of the game board used in printing the game board
-        - Type: int
-
-    - Name: player1Turn
-        - Description: variable to control the turn of player 1
-        - Type: bool
-
-    - Name: player2Turn
-        - Description: variable to control the turn of player 2
-        - Type: bool
-
-    - Name: player1Win
-        - Description: variable to determine the win condition of player 1
-        - Type: bool
-
-    - Name: player2Win
-        - Description: variable to determine the win condition of player 2
-        - Type: bool
-
-    - Name: getInput()
-        - Description: function to get the input of the players
-        - Return Type: void
-
-    - Name: checkForWin()
-        - Description: function to check the win conditions for both players
-        - Return Type: void
-
-    - Name: draw()
-        - Description: function to draw the game board
-        - Return Type: void
-
-    - Name: isGameOver()
-        - Description: function to return the status of the gameOver variable
-        - Return Type: bool
+   
